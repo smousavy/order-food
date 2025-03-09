@@ -1,4 +1,4 @@
-# yadegar-resturant
+# order-food
 [demo](https://yadegar-resturant-rd3gv2gmb-smousavis-projects.vercel.app).
 # 🚀 Vite React Template
 
