@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+}
+
+@font-face {
+  font-family: "theme";
+  src: url("/fonts/YekanBakhFaNum/TTF/YekanBakhFaNum-Thin.ttf")
+    format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "theme";
+  src: url("/fonts/YekanBakhFaNum/TTF/YekanBakhFaNum-Thin.ttf")
+    format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "theme";
+  src: url("/fonts/YekanBakhFaNum/TTF/YekanBakhFaNum-Light.ttf")
+    format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "theme";
+  font-weight: 400;
+  src: url("/fonts/YekanBakhFaNum/TTF/YekanBakhFaNum-Regular.ttf")
+    format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "theme";
+  src: url("/fonts/YekanBakhFaNum/TTF/YekanBakhFaNum-SemiBold.ttf")
+    format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "theme";
+  src: url("/fonts/YekanBakhFaNum/TTF/YekanBakhFaNum-Bold.ttf")
+    format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "theme";
+  src: url("/fonts/YekanBakhFaNum/TTF/YekanBakhFaNum-ExtraBold.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "theme";
+  src: url("/fonts/YekanBakhFaNum/TTF/YekanBakhFaNum-Black.ttf")
+    format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "theme";
+  src: url("/fonts/YekanBakhFaNum/TTF/YekanBakhFaNum-ExtraBlack.ttf")
+    format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@layer components {
+  .spinner {
+    margin: 3.2rem auto 1.6rem;
+    width: 60px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 8px solid theme("colors.primary.900");
+    border-right-color: theme("colors.primary.200");
+    animation: rotate 1s infinite linear;
+  }
+
+  .spinner-mini {
+    margin: 0;
+    width: 20px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 2px solid theme("colors.primary.200");
+    border-right-color: transparent;
+    animation: rotate 1s infinite linear;
+  }
+
+  @keyframes rotate {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+}
+
+/* For data picker */
+
+/* .rdp {
+  --rdp-cell-size: 32px !important;
+  --rdp-accent-color: theme("colors.accent.500") !important;
+  --rdp-background-color: theme("colors.accent.600") !important;
+  margin: 0 !important;
+} */
+
+body {
+  font-family: "theme", sans-serif;
+  background-color: #f7f7f7;
+  color: #444;
+}
+
+.layout {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 32px;
+  height: 100dvh;
+}
+
+/* https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje */
+.loader {
+  width: 45px;
+  aspect-ratio: 0.75;
+  --c: no-repeat linear-gradient(#333 0 0);
+  background: var(--c) 0% 50%, var(--c) 50% 50%, var(--c) 100% 50%;
+  background-size: 20% 50%;
+  animation: loading 1s infinite linear;
+}
+
+@keyframes loading {
+  20% {
+    background-position: 0% 0%, 50% 50%, 100% 50%;
+  }
+  40% {
+    background-position: 0% 100%, 50% 0%, 100% 50%;
+  }
+  60% {
+    background-position: 0% 50%, 50% 100%, 100% 0%;
+  }
+  80% {
+    background-position: 0% 50%, 50% 50%, 100% 100%;
+  }
+}
