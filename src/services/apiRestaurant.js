@@ -1,5 +1,8 @@
 import { createClient } from "@supabase/supabase-js";
-const supabase = createClient("https://kvbmsqxhfbgkllamshdx.supabase.co", "");
+const supabase = createClient(
+  "https://kvbmsqxhfbgkllamshdx.supabase.co",
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt2Ym1zcXhoZmJna2xsYW1zaGR4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzk2MTg2ODcsImV4cCI6MjA1NTE5NDY4N30.I9BcC6gqq_6b6Ve4CGDv0A3z-IQ_IUZcxnTdeVS55iI"
+);
 const API_URL = "/data.json";
 
 export async function getMenu() {
