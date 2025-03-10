@@ -1,16 +1,17 @@
 # order-food
-[demo](https://yadegar-resturant-rd3gv2gmb-smousavis-projects.vercel.app).
+
+[demo](https://order-food-one.vercel.app/).
+
 # 🚀 Vite React Template
 
 Vite React Template is a quick-start React template designed to accelerate your development process. It offers a streamlined setup similar to create-react-app but with Vite, Tailwind CSS, React Router, and more pre-configured to save you time and jumpstart your project.
 
 ## ✨ Features
 
-- **Vite** 
-- **Tailwind CSS** 
-- **React Router** 
+- **Vite**
+- **Tailwind CSS**
+- **React Router**
 - **Redux**
-
 
 ## 🛠️ Installation
 
@@ -19,7 +20,6 @@ To create a new project using Vite React Template, simply run the following comm
 ```console
 npx vite-react-template your-app-name
 ```
-
 
 Replace `your-app-name` with the desired name for your project.
 
@@ -38,4 +38,3 @@ Contributions are welcome! Feel free to submit bug reports, feature requests, or
 ## 📝 License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). Feel free to use, modify, and distribute this template for your own projects.
-
